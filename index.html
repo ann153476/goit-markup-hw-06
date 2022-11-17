@@ -17,7 +17,7 @@
         <div class="flex container">
         <a href="#" class="logo logo__up"><span class="color__web">Web</span><span class="color__studio__up">Studio</span></a>
     <nav>
-        <ul class=" flex nav__style">
+        <ul class="flex nav__style">
             <li><a href="index.html" class="active">Студія</a></li>
             <li><a href="portfolio.html">Портфоліо</a></li>
             <li><a href="#">Контакти</a></li>
@@ -41,10 +41,37 @@
             <div>
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
-                        <button class="modal__button" data-modal-close>
+                        <button class="modal__esc" data-modal-close>
                             <svg width="30" height="30"><use href="./img/x.svg#icon-x"></use></svg>
                         </button>
-                    </div>
+                        <!--fooooooooooooooooooooooooooooooooooooooooooorm-->
+                        <h2 class="modal__text__top">Залиште свої дані, ми вам передзвонимо</h2>
+                        <form class="call__back">
+                            <label for="name"><p>ім'я</p></label>
+                            <input type="text" name="name" id="name"/>
+                            <svg width="12" height="12"><use href="./img/icondz6.svg#icon-men"></use></svg>
+                            
+                            <label for="tel"><p>Телефон</p></label>
+                            <input type="text" name="tel" id="tel"/>
+                            <svg width="13" height="13"><use href="./img/icondz6.svg#icon-tel"></use></svg>
+                            
+                            <label for="mail"><p>Пошта</p></label>
+                            <input type="text" name="mail" id="mail"/>
+                            <svg width="15" height="12"><use href="./img/icondz6.svg#icon-mail"></use></svg>
+                            
+                            <label for="coment"><p>Коментар</p></label>
+                            <input type="text" name="coment" id="coment"/>
+                            
+                        </form>
+                            <div class="agree">
+                            <svg class="icon__cub" width="16" height="15"><use href="./img/icondz6.svg#icon-cub"></use></svg>
+                            <svg class="icon__ok" width="11" height="9"><use href="./img/icondz6.svg#icon-ok"></use></svg>
+                            <p>Погоджуюся з розсилкою та приймаю
+                                <a href="#">Умови договору</a> </p>
+                            </div>
+                            <button class="modal__submit" type="submit">Відправити</button>
+                            <!--****************************************8-->
+                        </div>
                 </div>
             </div>
         </section>
@@ -242,6 +269,16 @@
             <li><a href="#"><svg width="20" height="20">
                 <use href="./img/icons.svg#icon-linkedin"></use></svg></a></li>
         </ul></div> 
+        <div class="footer__mail">
+            <h2>Підпишіться на розсилку</h2>
+            <div class="flex">
+            <label for="mail"><p></p></label>
+            <input type="text" name="mail" id="mail"/>
+            <button>Підписатися
+                <svg width="24" height="24"><use href="./img/icondz6.svg#icon-fly"></use></svg>
+            </button>
+            </div>
+        </div>
     </div>
     </footer>
 <script src="./js/modal.js"></script>
