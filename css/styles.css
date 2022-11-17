@@ -94,6 +94,7 @@ p{
 .nav__style a{
     display: flex;
     padding: 32px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav__style li:not(:last-child){
     margin-right: 50px;
@@ -101,10 +102,10 @@ p{
 .nav__style a:hover,
 .nav__style a:focus{
     color: #2196F3;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .active:visited{
     color: #2196F3;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail{
     margin-right: 50px;
@@ -112,10 +113,10 @@ p{
 .m__t__style__up{
     color: #757575;
     font-weight: 500;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .m__t__style__up:hover, .m__t__style__up:focus {
     color: #2196F3;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact__up__please{
     margin-left: auto;
@@ -274,12 +275,12 @@ p{
     display: flex;
     margin-bottom: 50px;
     justify-content: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .buttons__portfolio button:hover, .buttons__portfolio button:focus{
     background-color: #2196F3;
     color:#fff;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .buttons__portfolio button{
     background-color:#F5F4FA;
@@ -335,10 +336,12 @@ svg{
     fill:currentColor;
 }
 /*іконки мило і тел*/
+.icon__m__t, .m__t__style__down{
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
 .icon__m__t:hover, .icon__m__t:focus,
 .m__t__style__down:hover, .m__t__style__down:focus {
     color:#2196F3;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*іконки месенджеров*/
@@ -356,11 +359,11 @@ svg{
     align-items: center;
     justify-content: center;
     color:#afb1b8;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .ico__messenger a:hover, .ico__messenger a:focus {
     background-color: #2196F3;
     color:#FFFFFF;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*іконки футер*/
 .ico__messenger__down a{
@@ -393,13 +396,14 @@ svg{
     align-items: center;
     justify-content: center;  
     color:#afb1b8;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__a:not(:last-child){
     margin-right: 30px;
 }
 .clients__a:hover, .clients__a:focus{
     color:#2196F3;border: 1px solid #2196F3;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 /*друга сторінка*/
 .portfolio__net a{
@@ -434,26 +438,18 @@ svg{
     position: fixed;
     top: 0;left: 0;right: 0;bottom: 0;
     background-color: #00000033;
-    animation: backdrop__anime 3s linear ;
+    opacity: 1;
+    transition: 3s linear;
 }
 .backdrop.is-hidden{
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
 }
-@keyframes backdrop__anime{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
 .modal{
     position: absolute;
     width: 528px;
     height: 581px;
-    
     top: 50%;left: 50%;
     transform: translate(-50%,-50%);
     background-color: #FFFFFF;
@@ -490,6 +486,7 @@ svg{
 /*чорточки меню***/
 .nav__style a{
     position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav__style a:hover::after,
 .nav__style a:focus::after,
@@ -502,7 +499,6 @@ svg{
     height: 4px;
     background: #2196F3;
     border-radius: 2px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /******dz6*******/
 .modal__text__top{
