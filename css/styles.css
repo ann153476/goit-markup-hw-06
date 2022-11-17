@@ -371,7 +371,6 @@ svg{
     line-height: 1.14;
     letter-spacing: 0.03em;
     margin-bottom: 20px;
-    margin-top: 9px;
 }
 .ico__messenger__down svg{
     color: #FFFFFF;
@@ -479,7 +478,6 @@ svg{
     background-color: #2196F3E5;
     transform: translateY(0);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
 }
 .portfolio__net a:hover .overlay,
 .portfolio__net a:focus .overlay{
@@ -587,7 +585,6 @@ svg{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-top: 9px;
     margin-bottom: 20px;
 }
 .footer__mail input{
