@@ -45,6 +45,7 @@
                             <svg width="30" height="30"><use href="./img/x.svg#icon-x"></use></svg>
                         </button>
                         <!--fooooooooooooooooooooooooooooooooooooooooooorm-->
+                    <div class="container__modal">
                         <h2 class="modal__text__top">Залиште свої дані, ми вам передзвонимо</h2>
                         <form class="call__back">
                             <label for="name"><p>ім'я</p></label>
@@ -52,7 +53,7 @@
                             <svg width="12" height="12"><use href="./img/icondz6.svg#icon-men"></use></svg>
                             
                             <label for="tel"><p>Телефон</p></label>
-                            <input type="text" name="tel" id="tel"/>
+                            <input type="number" name="tel" id="tel"/>
                             <svg width="13" height="13"><use href="./img/icondz6.svg#icon-tel"></use></svg>
                             
                             <label for="mail"><p>Пошта</p></label>
@@ -60,18 +61,18 @@
                             <svg width="15" height="12"><use href="./img/icondz6.svg#icon-mail"></use></svg>
                             
                             <label for="coment"><p>Коментар</p></label>
-                            <input type="text" name="coment" id="coment"/>
+                            <textarea  type="text" name="coment" id="coment" placeholder="Введіть текст" class="coment"></textarea>
                             
                         </form>
                             <div class="agree">
-                            <svg class="icon__cub" width="16" height="15"><use href="./img/icondz6.svg#icon-cub"></use></svg>
-                            <svg class="icon__ok" width="11" height="9"><use href="./img/icondz6.svg#icon-ok"></use></svg>
-                            <p>Погоджуюся з розсилкою та приймаю
-                                <a href="#">Умови договору</a> </p>
+                            <input type="checkbox" name="agree" id="agree"/>    
+                            <label for="agree">Погоджуюся з розсилкою та приймаю<a href="#">Умови договору</a></label>
+                            
                             </div>
+                            
                             <button class="modal__submit" type="submit">Відправити</button>
-                            <!--****************************************8-->
-                        </div>
+                    </div>
+                        <!--****************************************8-->
                 </div>
             </div>
         </section>
