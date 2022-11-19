@@ -48,27 +48,30 @@
                     <div class="container__modal">
                         <h2 class="modal__text__top">Залиште свої дані, ми вам передзвонимо</h2>
                         <form class="call__back">
+                            <div>
                             <label for="name"><p>ім'я</p></label>
                             <input type="text" name="name" id="name"/>
-                            <svg width="12" height="12"><use href="./img/icondz6.svg#icon-men"></use></svg>
-                            
+                            <svg class="ico" width="18" height="18"><use href="./img/icondz6.svg#icon-men"></use></svg></div>
+                            <div>
                             <label for="tel"><p>Телефон</p></label>
                             <input type="number" name="tel" id="tel"/>
-                            <svg width="13" height="13"><use href="./img/icondz6.svg#icon-tel"></use></svg>
-                            
+                            <svg class="ico" width="18" height="18"><use href="./img/icondz6.svg#icon-tel"></use></svg></div>
+                            <div>
                             <label for="mail"><p>Пошта</p></label>
                             <input type="text" name="mail" id="mail"/>
-                            <svg width="15" height="12"><use href="./img/icondz6.svg#icon-mail"></use></svg>
+                            <svg class="ico" width="18" height="18"><use href="./img/icondz6.svg#icon-mail"></use></svg></div>
                             
                             <label for="coment"><p>Коментар</p></label>
                             <textarea  type="text" name="coment" id="coment" placeholder="Введіть текст" class="coment"></textarea>
                             
                         </form>
-                            <div class="agree">
-                            <input type="checkbox" name="agree" id="agree"/>    
-                            <label for="agree">Погоджуюся з розсилкою та приймаю<a href="#">Умови договору</a></label>
+                        <form class="agree">
+                            <label for="agree">
+                                <input class="checkbox" type="checkbox" name="agree" id="agree"/>    
+                                <span class="ico__ok"></span>
+                                Погоджуюся з розсилкою та приймаю  <a href="#">Умови договору</a></label>
                             
-                            </div>
+                        </form>
                             
                             <button class="modal__submit" type="submit">Відправити</button>
                     </div>
