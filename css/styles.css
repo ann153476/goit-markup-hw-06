@@ -627,6 +627,7 @@ svg{
     border-color: transparent;
     background-image: url(../img/icon-check.svg);
     background-size:cover;
+    background-origin: border-box ;
     background-repeat: no-repeat;
     background-color: #2196F3;
 }
