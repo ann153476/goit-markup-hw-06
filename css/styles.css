@@ -625,9 +625,10 @@ svg{
 }
 .checkbox:checked+ .ico__ok{
     border-color: transparent;
-    background-image: url(../img/x.svg);
+    background-image: url(../img/icon-check.svg);
     background-size:cover;
     background-repeat: no-repeat;
+    background-color: #2196F3;
 }
 
 .modal__submit{
