@@ -448,7 +448,7 @@ svg{
 }
 /*модалка*/
 .backdrop{
-    position: fixed;
+    position: relative;
     z-index: 2;
     top: 0;left: 0;right: 0;bottom: 0;
     background-color: #00000033;
@@ -472,7 +472,8 @@ svg{
 }
 .modal__esc{
     border: none;background-color: transparent;
-    position: fixed;
+    position: absolute;
+    padding: 0;
     right: 8px;top: 8px;cursor: pointer;
 }
 .modal__esc svg{
@@ -564,6 +565,7 @@ svg{
 }
 .call__back input,
 .call__back textarea{
+    outline: transparent;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -574,7 +576,9 @@ svg{
 .call__back input:hover,
 .call__back input:focus,
 .call__back textarea:hover,
-.call__back textarea:focus{
+.call__back textarea:focus,
+.footer__mail input:hover,
+.footer__mail input:focus{
     border-color: #2196F3;
 }
 .call__back input:hover+.ico,
@@ -639,6 +643,9 @@ svg{
     margin: auto;
     background-color:#2196F3;
     color:#FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
     width: 200px;
     height: 50px;
     border:none;
@@ -662,10 +669,13 @@ svg{
 .footer__mail input{
     width: 358px;
     height: 50px;
+    padding-left: 16px;
+    color: #FFFFFF;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: transparent;  
+    outline: transparent;
     margin-right: 12px;
 }
 .footer__mail button{
@@ -674,6 +684,7 @@ svg{
     align-items: center;
     width: 200px;
     height: 50px;
+    border: none;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
